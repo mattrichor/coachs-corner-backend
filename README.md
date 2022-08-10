@@ -4,8 +4,12 @@
 - DREAM TEAM - 
 ### Matthew Geyer
 ### [LinkedIn](https://www.linkedin.com/in/matthew-geyer-174644170/) | [GitHub](https://github.com/mattrichor)
+
 ### Matthew Russelli
 ### [LinkedIn](https://www.linkedin.com/in/matthewrusselli/) | [GitHub](https://github.com/MattRusselli)
+
+### Richard Remley
+### [LinkedIn]() | [GitHub]()
 
 ***
 
