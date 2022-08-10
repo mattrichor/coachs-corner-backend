@@ -2,7 +2,7 @@
 
 ## Date: 7/1/2022
 
-##TEAM
+## TEAM
 ### Matthew Geyer
 #### [LinkedIn](https://www.linkedin.com/in/matthew-geyer-174644170/) | [GitHub](https://github.com/mattrichor)
 
