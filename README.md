@@ -15,7 +15,7 @@
 ***
 
 ### ***Description***
-Coaching, Gameified! A app will be used to help coaches to see player skills, update them, and store them. Players will be given assignments and exercise drills by the coach, thus ranking up their player skills, and allowing the coach to track their progress. This app will thus serve as an effective method for coaches and players to communicate, plan, and build the capabilities of their team.
+Coaching, Gameified! This app will be used to help coaches to see player skills, update them, and store them. Players will be given assignments and exercise drills by the coach, ranking up their skills through assingment completion, and allowing the coach to track their progress. This app will thus serve as an effective method for coaches and players to communicate, plan, and build the capabilities of their team.
 ***
 
 ### ***Client***
