@@ -10,7 +10,7 @@
 #### [LinkedIn](https://www.linkedin.com/in/matthewrusselli/) | [GitHub](https://github.com/MattRusselli)
 
 ### Richard Remley
-#### [LinkedIn]() | [GitHub]()
+#### [LinkedIn](https://www.linkedin.com/in/richardjremley/) | [GitHub](https://github.com/American-Cossack)
 
 ***
 
