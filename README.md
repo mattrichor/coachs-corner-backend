@@ -41,10 +41,17 @@ link here: (https://app.diagrams.net/#G1CDG0_rOiww0qhg1vd3gKZ3MMVxP0LSbE)
 ### ***Screenshots***
 
 ***
-### ***Task Lists***
-## Trello Board
+## ***Task Lists***
+### Trello Board
 link here: (https://trello.com/b/DOrvIXPm/coachs-corner)
 
+### Feature Wish List
+Backend with 3 associated models
+Login / user auth
+Team page containing player cards
+Player and coach profiles
+Full crud with updating skills
+Workouts
 
 ***
 
