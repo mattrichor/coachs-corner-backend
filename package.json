@@ -1,0 +1,24 @@
+{
+  "name": "coachs_corner_backend",
+  "version": "1.0.0",
+  "description": "## Date: 7/1/2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattrichor/Coachs_Corner_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattrichor/Coachs_Corner_backend/issues"
+  },
+  "homepage": "https://github.com/mattrichor/Coachs_Corner_backend#readme",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.3"
+  }
+}
