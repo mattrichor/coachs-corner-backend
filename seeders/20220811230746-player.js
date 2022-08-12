@@ -93,7 +93,7 @@ module.exports = {
         return {
           name: `${firstName} ${lastName}`,
           email: `${firstName}.${lastName}@gmail.com`,
-          password: `1234`,
+          passwordDigest: `1234`,
           proPic: `${falso.randAvatar()}`,
           primaryPosition: primaryPosition,
           secondaryPosition: `${secondaryPosition}`,
