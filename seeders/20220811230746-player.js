@@ -90,8 +90,6 @@ module.exports = {
 
         generateSecondaryPos(primaryPosition)
 
-        // let secondaryPosition = `${falso.randNumber({ min: 1, max: 9 })}`
-
         return {
           name: `${firstName} ${lastName}`,
           email: `${firstName}.${lastName}@gmail.com`,
@@ -111,6 +109,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('players')
+    return queryInterface.bulkDelete('players', null, {})
   }
 }

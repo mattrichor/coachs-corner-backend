@@ -12,8 +12,9 @@ module.exports = (sequelize, DataTypes) => {
         as: 'workoutPlayers',
         foreignKey: 'playerId'
       })
-      Workout.hasOne(models.Skill, {
+      Workout.belongsToMany(models.Skill, {
         as: 'skillWorkouts',
+        through: models.WorkoutSkill,
         foreignKey: 'workoutId'
       })
     }

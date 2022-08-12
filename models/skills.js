@@ -12,9 +12,10 @@ module.exports = (sequelize, DataTypes) => {
         as: 'skills',
         foreignKey: 'playerId'
       })
-      Skill.belongsTo(models.Workout, {
+      Skill.belongsToMany(models.Workout, {
         as: 'workoutSkills',
-        foreignKey: 'workoutId'
+        through: models.WorkoutSkill,
+        foreignKey: 'skillId'
       })
     }
   }
@@ -28,14 +29,14 @@ module.exports = (sequelize, DataTypes) => {
           key: 'id'
         }
       },
-      workoutId: {
-        type: DataTypes.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'workouts',
-          key: 'id'
-        }
-      },
+      // workoutId: {
+      //   type: DataTypes.INTEGER,
+      //   onDelete: 'CASCADE',
+      //   references: {
+      //     model: 'workouts',
+      //     key: 'id'
+      //   }
+      // },
       skillLevel: DataTypes.INTEGER,
       skillName: DataTypes.STRING
     },
