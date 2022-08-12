@@ -40,7 +40,9 @@ Node JS
 
 ---
 
-### **_Getting Started_**
+### **_Presentation_**
+
+[GoogleSheets](https://docs.google.com/presentation/d/1TBqEqVnjRmM86nm8Xn7v2wmPUrFsIkv1JCl6DyhUzYk/edit#slide=id.gd251bb473_0_600)
 
 ##### Diagrams:
 

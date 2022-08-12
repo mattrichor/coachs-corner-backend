@@ -1,24 +1,34 @@
-'use strict';
+'use strict'
+const falso = require('@ngneat/falso')
+const { Coach, Player, sequelize } = require('../models')
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+  up: async (queryInterface, Sequelize) => {
+    const items = await Promise.all(
+      [...Array(72)].map(async () => {
+        let customer = await Customer.findOne({
+          order: sequelize.random(),
+          raw: true
+        })
+        let player = await Player.findOne({
+          order: sequelize.random(),
+          where: { customer_id: { [Op.not]: customer.id } },
+          raw: true
+        })
+        return {
+          size: falso.randClothingSize(),
+          color: falso.randColor(),
+          price: falso.randNumber(),
+          qtn: falso.randNumber({ min: 1, max: 6 }),
+          customer_id: customer.id,
+          cart_id: cart.id
+        }
+      })
+    )
+    return queryInterface.bulkInsert('items', items)
   },
 
-  async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+  down: async (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('items')
   }
-};
+}
