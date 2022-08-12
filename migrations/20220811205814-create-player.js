@@ -17,6 +17,9 @@ module.exports = {
       password: {
         type: Sequelize.STRING
       },
+      proPic: {
+        type: Sequelize.STRING
+      },
       primaryPosition: {
         type: Sequelize.STRING
       },

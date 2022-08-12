@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.TEXT
       },
       completionDate: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       skillIncrease: {
         type: Sequelize.INTEGER
