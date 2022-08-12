@@ -96,6 +96,7 @@ module.exports = {
           name: `${firstName} ${lastName}`,
           email: `${firstName}.${lastName}@gmail.com`,
           password: `1234`,
+          proPic: `${falso.randAvatar()}`,
           primaryPosition: primaryPosition,
           secondaryPosition: `${secondaryPosition}`,
           height: falso.randNumber({ min: 60, max: 80 }),
