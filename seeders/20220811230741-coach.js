@@ -3,11 +3,12 @@ const falso = require('@ngneat/falso')
 
 const coachFirstName = `${falso.randFirstName()}`
 const coachLastName = `${falso.randLastName()}`
+
 const coaches = [...Array(1)].map(() => ({
   name: `${coachFirstName} ${coachLastName}`,
   sport: 'Baseball',
   email: `${coachFirstName}.${coachLastName}@gmail.com`,
-  password: '1234',
+  passwordDigest: '1234',
   teamName: falso.randBaseballTeam()
 }))
 
