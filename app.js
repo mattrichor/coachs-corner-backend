@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
 const AuthRouter = require('./routes/AuthRouter')
+// const PlayerAuthRouter = require('./routes/PlayerAuthRouter')
 const PlayerRouter = require('./routes/PlayerRouter')
 const WorkoutRouter = require('./routes/WorkoutRouter')
 
@@ -14,6 +15,7 @@ app.use(logger('dev'))
 app.use(express.json())
 
 app.use('/auth', AuthRouter)
+// app.use('/auth', PlayerAuthRouter)
 app.use('/workout', WorkoutRouter)
 app.use('/players', PlayerRouter)
 

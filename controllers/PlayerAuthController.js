@@ -1,4 +1,4 @@
-const { Player } = require('../models')
+const { Player, Skill } = require('../models')
 const middleware = require('../middleware')
 
 const Login = async (req, res) => {
@@ -44,14 +44,47 @@ const Register = async (req, res) => {
     const player = await Player.create({
       name,
       email,
-      password,
+      passwordDigest,
       primaryPosition,
       secondaryPosition,
       height,
       weight,
       age,
       coachId
-    })
+    }).then(
+      await Skill.create([
+        {
+          skillName: 'Speed',
+          skillLevel: 25,
+          playerId: player.id
+        },
+        {
+          skillName: 'Catching',
+          skillLevel: 25,
+          playerId: player.id
+        },
+        {
+          skillName: 'Pitch Control',
+          skillLevel: 25,
+          playerId: player.id
+        },
+        {
+          skillName: 'Pitch Velocity',
+          skillLevel: 25,
+          playerId: player.id
+        },
+        {
+          skillName: 'Contact',
+          skillLevel: 25,
+          playerId: player.id
+        },
+        {
+          skillName: 'Power',
+          skillLevel: 25,
+          playerId: player.id
+        }
+      ])
+    )
     res.send(player)
   } catch (error) {
     throw error
@@ -88,3 +121,17 @@ module.exports = {
   UpdatePassword,
   CheckSession
 }
+
+//TEST PLAYER DIGEST FOR INSOMNIA
+//
+// {
+// 	"name": "Test Player",
+// 	"email": "test@test.com",
+// 	"password": "1234",
+// 	"primaryPosition": "Pitcher",
+// 	"secondaryPosition":"Second Baseman",
+// 	"height": 68,
+// 	"weight": 150,
+// 	"age": 15,
+// 	"coachId": 1
+// }
