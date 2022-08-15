@@ -3,6 +3,7 @@ const controller = require('../controllers/WorkoutController')
 const middleware = require('../middleware')
 
 router.get('/:player_id', controller.GetWorkouts)
+router.get('/', controller.GetWorkout)
 router.post(
   '/:player_id',
   middleware.stripToken,
