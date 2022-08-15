@@ -130,7 +130,7 @@ module.exports = {
         email: `jkendricks@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.gannett-cdn.com/presto/2021/04/12/NAAS/d6e39359-eac3-467d-a23e-ff82a5e4158d-starkey.JPG?width=660&height=450&fit=crop&format=pjpg&auto=webp",
         primaryPosition: `Catcher`,
         secondaryPosition: `First Baseman, Pitcher`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -144,7 +144,7 @@ module.exports = {
         email: `jwilliams@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://cdn1.sportngin.com/attachments/news_article/b03c-176320943/DSC_0203.jpg",
         primaryPosition: `First Baseman`,
         secondaryPosition: `Second Baseman`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -158,7 +158,7 @@ module.exports = {
         email: `orodriguez@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://2qibqm39xjt6q46gf1rwo2g1-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/25300167_web1_L1A-Dominic-Hellman-EDH-052621-FS-1024x686.jpg",
         primaryPosition: `Second Baseman`,
         secondaryPosition: `Shortstop`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -172,7 +172,7 @@ module.exports = {
         email: `swalters@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.masslive.com/resizer/1nMmrpOKi8aSAObi_uD3OBk21B4=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/7BHPAXE3ZJAANMYDAZ2FZYWEAQ.JPG",
         primaryPosition: `Shortstop`,
         secondaryPosition: `Second Baseman`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -186,7 +186,7 @@ module.exports = {
         email: `rrobers@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.archbishopcurley.org/wp-content/uploads/bfi_thumb/baseball-2400-1260x680-paejoemfqdopmhbtnqvqhz3gin08xcbbm8prrxpjtc.jpg",
         primaryPosition: `Pitcher`,
         secondaryPosition: `First Baseman`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -200,7 +200,7 @@ module.exports = {
         email: `jortiz@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.gannett-cdn.com/presto/2019/05/29/PLOU/ab3af271-8cc9-4d40-af9a-1a0e4c22a557-7thRegionTrinityStX_TDE010.jpg",
         primaryPosition: `Third Baseman`,
         secondaryPosition: `First Baseman, Shortstop`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -214,7 +214,7 @@ module.exports = {
         email: `fortega@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://thumbor.bigedition.com/img/Qv2dtYhDxZQxlZYRsLSlJojgRoQ=/800x800/filters:quality(80)/granite-web-prod/22/7c/227cafcb21d7467185c6ab34a129b8ad.jpeg",
         primaryPosition: `Left Fielder`,
         secondaryPosition: `Center Fielder, Right Fielder`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -228,7 +228,7 @@ module.exports = {
         email: `ksuzuki@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "http://www.baseballasia.org/BFA/include/UploadImages/6323489725c209fb8db743-p01.png",
         primaryPosition: `Center Fielder`,
         secondaryPosition: `Left Fielder, Right Fielder`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -242,7 +242,7 @@ module.exports = {
         email: `jkendricks@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.kansas.com/latest-news/2ejq37/picture251836043/alternates/FREE_1140/elliot.jpeg",
         primaryPosition: `Right Fielder`,
         secondaryPosition: `Center Fielder, Left Fielder`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -256,7 +256,7 @@ module.exports = {
         email: `brieviera@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/nFWrJdV_m9HB5g3mK84rmvdYd9I=/1660x934/filters:focal(2448x786:2458x776):no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/I6VAHAT7FJGCROWHKXJBBFIDGU.jpg",
         primaryPosition: `Shortstop`,
         secondaryPosition: `Left Fielder, Center Fielder, Right Fielder`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -270,7 +270,7 @@ module.exports = {
         email: `emurray@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.tvinsider.com/wp-content/uploads/2021/02/COMING_TO_AMERICA_2-1014x570.jpg",
         primaryPosition: `Third Baseman`,
         secondaryPosition: `Shortstop, First Baseman`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -284,7 +284,7 @@ module.exports = {
         email: `desilva@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.mlive.com/resizer/M9DkTnhnjS-X8K6ilfVRV6v7P9Q=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/3NN3YJIIRFELFAWWJEKYM73WWQ.JPG",
         primaryPosition: `Second Baseman`,
         secondaryPosition: `Catcher`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -298,7 +298,7 @@ module.exports = {
         email: `rsandberg@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://imengine.prod.srp.navigacloud.com/?uuid=1A48F954-78F4-40AA-B79E-E7C0FE510219&type=primary&q=72&width=1024",
         primaryPosition: `Left Fielder`,
         secondaryPosition: `Center Fielder, Right Fielder`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -312,7 +312,7 @@ module.exports = {
         email: `brieviera@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://www.gannett-cdn.com/presto/2021/06/20/PLOU/b23f17d2-e020-45af-8439-43d0f7470e05-21061906-19-2021TrinityvsMcCrackenCountyKHSAABaseball0025MCseq.JPG",
         primaryPosition: `Pitcher`,
         secondaryPosition: `First Baseman`,
         height: falso.randNumber({ min: 50, max: 70 }),
@@ -326,7 +326,7 @@ module.exports = {
         email: `ewalsh@gmail.com`,
         passwordDigest: `1234`,
         proPic:
-          "https://tomahawktake.com/wp-content/uploads/usat-images/2017/02/9883298-mlb-atlanta-braves-workouts.jpeg",
+          "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/gJbGrugPzcdRZYVZ2ILvIeOZ124=/1660x934/filters:focal(1108x287:1118x277):no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/SNPCAE6T5RCVDC7PJSLKQYC5UI.jpg",
         primaryPosition: `Catcher`,
         secondaryPosition: `First Baseman`,
         height: falso.randNumber({ min: 50, max: 70 }),
