@@ -17,6 +17,7 @@ module.exports = {
 
         let primaryPositionMath = falso.randNumber({ min: 0, max: 8 });
         let primaryPosition;
+        let proPic;
 
         switch (primaryPositionMath) {
           case 0:
@@ -111,7 +112,7 @@ module.exports = {
           name: `${firstName} ${lastName}`,
           email: `${firstName}.${lastName}@gmail.com`,
           passwordDigest: `1234`,
-          // proPic: `${falso.randAvatar()}`,
+          proPic: proPic,
           primaryPosition: primaryPosition,
           secondaryPosition: `${secondaryPosition}`,
           height: falso.randNumber({ min: 60, max: 80 }),
