@@ -28,14 +28,14 @@ module.exports = {
           key: 'id'
         }
       },
-      // skillId: {
-      //   type: Sequelize.INTEGER,
-      //   onDelete: 'CASCADE',
-      //   references: {
-      //     model: 'skills',
-      //     key: 'id'
-      //   }
-      // },
+      skillId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'skills',
+          key: 'id'
+        }
+      },
       createdAt: {
         field: 'createdAt',
         allowNull: false,

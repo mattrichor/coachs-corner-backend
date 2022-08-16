@@ -3,12 +3,9 @@ const controller = require('../controllers/SkillsController')
 const middleware = require('../middleware')
 
 router.get('/:player_id', controller.GetSkillsByPlayerId)
-
-// router.put(
-//   '/:workout_id/:player_id',
-//   middleware.stripToken,
-//   middleware.verifyToken,
-//   controller.UpdateWorkout
-// )
+router.get(
+  '/workouts/:player_id/:workout_id',
+  controller.GetAndUpdateSkillLevel
+)
 
 module.exports = router

@@ -12,10 +12,9 @@ module.exports = (sequelize, DataTypes) => {
         as: 'workoutPlayers',
         foreignKey: 'playerId'
       })
-      Workout.belongsToMany(models.Skill, {
-        as: 'skillWorkouts',
-        through: models.WorkoutSkill,
-        foreignKey: 'workoutId'
+      Workout.belongsTo(models.Skill, {
+        as: 'skills',
+        foreignKey: 'skillId'
       })
     }
   }
@@ -32,15 +31,15 @@ module.exports = (sequelize, DataTypes) => {
           model: 'players',
           key: 'id'
         }
+      },
+      skillId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'skills',
+          key: 'id'
+        }
       }
-      // skillId: {
-      //   type: DataTypes.INTEGER,
-      //   onDelete: 'CASCADE',
-      //   references: {
-      //     model: 'skills',
-      //     key: 'id'
-      //   }
-      // }
     },
     {
       sequelize,
