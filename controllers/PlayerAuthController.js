@@ -1,4 +1,4 @@
-const { Player } = require('../models')
+const { Player, Skill } = require('../models')
 const middleware = require('../middleware')
 
 const Login = async (req, res) => {
@@ -121,3 +121,17 @@ module.exports = {
   UpdatePassword,
   CheckSession
 }
+
+//TEST PLAYER DIGEST FOR INSOMNIA
+//
+// {
+// 	"name": "Test Player",
+// 	"email": "test@test.com",
+// 	"password": "1234",
+// 	"primaryPosition": "Pitcher",
+// 	"secondaryPosition":"Second Baseman",
+// 	"height": 68,
+// 	"weight": 150,
+// 	"age": 15,
+// 	"coachId": 1
+// }

@@ -13,6 +13,7 @@ const GetSkillsByPlayerId = async (req, res) => {
   }
 }
 
+
 module.exports = {
   GetSkillsByPlayerId
 }
