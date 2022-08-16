@@ -13,14 +13,6 @@ const GetSkillsByPlayerId = async (req, res) => {
   }
 }
 
-const CreateSkillsOnPlayerRegister = async (req, res) => {
-  try {
-    const skills = await Skill.Create()
-    res.send(skills)
-  } catch (error) {
-    throw error
-  }
-}
 
 module.exports = {
   GetSkillsByPlayerId

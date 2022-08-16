@@ -5,6 +5,7 @@ const AuthRouter = require('./routes/AuthRouter')
 // const PlayerAuthRouter = require('./routes/PlayerAuthRouter')
 const PlayerRouter = require('./routes/PlayerRouter')
 const WorkoutRouter = require('./routes/WorkoutRouter')
+const SkillsRouter = require('./routes/SkillsRouter')
 
 const app = express()
 
@@ -18,5 +19,6 @@ app.use('/auth', AuthRouter)
 // app.use('/auth', PlayerAuthRouter)
 app.use('/workout', WorkoutRouter)
 app.use('/players', PlayerRouter)
+app.use('/skills', SkillsRouter)
 
 app.listen(PORT, () => console.log(`Server Running On Port: ${PORT}`))
