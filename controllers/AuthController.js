@@ -1,4 +1,4 @@
-const { Coach } = require('../models')
+const { Coach, Player, Skill } = require('../models')
 const middleware = require('../middleware')
 
 const Login = async (req, res) => {
@@ -30,7 +30,7 @@ const Login = async (req, res) => {
   }
 }
 
-const Register = async (req, res) => {
+const RegisterCoach = async (req, res) => {
   try {
     const { name, email, password, sport, teamName } = req.body
     let passwordDigest = await middleware.hashPassword(password)
@@ -42,6 +42,70 @@ const Register = async (req, res) => {
       teamName
     })
     res.send(coach)
+  } catch (error) {
+    throw error
+  }
+}
+
+const RegisterPlayer = async (req, res) => {
+  try {
+    const {
+      name,
+      email,
+      password,
+      primaryPosition,
+      secondaryPosition,
+      height,
+      weight,
+      age,
+      coachId
+    } = req.body
+    let passwordDigest = await middleware.hashPassword(password)
+    const player = await Player.create({
+      name,
+      email,
+      passwordDigest,
+      primaryPosition,
+      secondaryPosition,
+      height,
+      weight,
+      age,
+      coachId
+    })
+    res.send(player)
+    const skills = await Skill.bulkCreate([
+      {
+        skillName: 'Speed',
+        skillLevel: 25,
+        playerId: player.id
+      },
+      {
+        skillName: 'Catching',
+        skillLevel: 25,
+        playerId: player.id
+      },
+      {
+        skillName: 'Pitch Control',
+        skillLevel: 25,
+        playerId: player.id
+      },
+      {
+        skillName: 'Pitch Velocity',
+        skillLevel: 25,
+        playerId: player.id
+      },
+      {
+        skillName: 'Contact',
+        skillLevel: 25,
+        playerId: player.id
+      },
+      {
+        skillName: 'Power',
+        skillLevel: 25,
+        playerId: player.id
+      }
+    ])
+    // res.send(skills)
   } catch (error) {
     throw error
   }
@@ -73,7 +137,8 @@ const CheckSession = async (req, res) => {
 
 module.exports = {
   Login,
-  Register,
+  RegisterCoach,
+  RegisterPlayer,
   UpdatePassword,
   CheckSession
 }

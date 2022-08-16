@@ -13,6 +13,7 @@ const GetSkillsByPlayerId = async (req, res) => {
   }
 }
 
+
 const GetWorkoutSkills = async (req, res) => {
   try {
     const list = await Skill.findAll({
@@ -50,6 +51,7 @@ const GetAndUpdateSkillLevel = async (req, res) => {
     throw error
   }
 }
+
 
 module.exports = {
   GetSkillsByPlayerId,

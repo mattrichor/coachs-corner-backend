@@ -3,7 +3,8 @@ const controller = require('../controllers/AuthController')
 const middleware = require('../middleware')
 
 router.post('/login', controller.Login)
-router.post('/register/coach', controller.Register)
+router.post('/register/coach', controller.RegisterCoach)
+router.post('/register/player', controller.RegisterPlayer)
 router.post(
   '/update',
   middleware.stripToken,
