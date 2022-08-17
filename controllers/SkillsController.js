@@ -35,18 +35,26 @@ const GetAndUpdateSkillLevel = async (req, res) => {
   try {
     const workout = await Workout.findOne({
       where: {
-        id: req.params.workout_id
-      },
-      include: [
-        {
-          model: Skill,
-          as: 'skillWorkouts',
-          through: { attributes: [] },
-          where: { playerId: req.params.player_id }
-        }
-      ]
+        id: req.params.workout_id,
+        playerId: req.params.player_id
+      }
     })
-    res.send(workout)
+    const skillIncrease = await workout.skillIncrease
+    const skill = await Skill.findOne({ where: { id: workout.skillId } })
+    const skillLevel = (await skill.skillLevel) + skillIncrease
+
+    console.log(skillLevel)
+    const updatedSkill = await Skill.update(
+      { skillLevel: skillLevel },
+      { where: { id: workout.skillId }, returning: true }
+    )
+    await Workout.destroy({
+      where: {
+        id: req.params.workout_id,
+        playerId: req.params.player_id
+      }
+    })
+    res.send(updatedSkill)
   } catch (error) {
     throw error
   }
