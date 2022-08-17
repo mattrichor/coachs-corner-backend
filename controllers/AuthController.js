@@ -30,6 +30,7 @@ const LoginCoach = async (req, res) => {
   }
 }
 
+
 const LoginPlayer = async (req, res) => {
   try {
     const player = await Player.findOne({
@@ -62,6 +63,7 @@ const LoginPlayer = async (req, res) => {
     throw error
   }
 }
+
 
 const RegisterCoach = async (req, res) => {
   try {
@@ -168,6 +170,7 @@ const CheckSession = async (req, res) => {
 }
 
 module.exports = {
+
   LoginCoach,
   LoginPlayer,
   RegisterCoach,
