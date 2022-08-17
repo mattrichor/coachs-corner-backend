@@ -8,5 +8,11 @@ router.get(
   middleware.verifyToken,
   controller.GetPlayersByCoachId
 )
+router.get(
+  '/logging_in/:email',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.GetLoggingInPlayer
+)
 
 module.exports = router
