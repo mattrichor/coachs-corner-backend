@@ -1,7 +1,7 @@
 const { Coach, Player, Skill } = require('../models')
 const middleware = require('../middleware')
 
-const Login = async (req, res) => {
+const LoginCoach = async (req, res) => {
   try {
     const coach = await Coach.findOne({
       where: { email: req.body.email },
@@ -29,6 +29,41 @@ const Login = async (req, res) => {
     throw error
   }
 }
+
+
+const LoginPlayer = async (req, res) => {
+  try {
+    const player = await Player.findOne({
+      where: { email: req.body.email },
+      raw: true
+    })
+    if (
+      player &&
+      (await middleware.comparePassword(
+        player.passwordDigest,
+        req.body.password
+      ))
+    ) {
+      let payload = {
+        id: player.id,
+        email: player.email,
+        name: player.name,
+        primaryPosition: player.primaryPosition,
+        secondaryPosition: player.secondaryPosition,
+        height: player.height,
+        weight: player.weight,
+        age: player.age,
+        coachId: player.coachId
+      }
+      let token = middleware.createToken(payload)
+      return res.send({ player: payload, token })
+    }
+    res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
+  } catch (error) {
+    throw error
+  }
+}
+
 
 const RegisterCoach = async (req, res) => {
   try {
@@ -105,7 +140,6 @@ const RegisterPlayer = async (req, res) => {
         playerId: player.id
       }
     ])
-    // res.send(skills)
   } catch (error) {
     throw error
   }
@@ -136,7 +170,9 @@ const CheckSession = async (req, res) => {
 }
 
 module.exports = {
-  Login,
+
+  LoginCoach,
+  LoginPlayer,
   RegisterCoach,
   RegisterPlayer,
   UpdatePassword,

@@ -13,6 +13,20 @@ const GetPlayersByCoachId = async (req, res) => {
   }
 }
 
+const GetLoggingInPlayer = async (req, res) => {
+  try {
+    const players = await Player.findOne({
+      where: {
+        email: req.params.email
+      }
+    })
+    res.send(players)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
-  GetPlayersByCoachId
+  GetPlayersByCoachId,
+  GetLoggingInPlayer
 }
