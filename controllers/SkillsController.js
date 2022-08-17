@@ -20,7 +20,7 @@ const GetSkillName = async (req, res) => {
         id: req.params.skill_id
       }
     })
-    res.send(skill.skillName)
+    res.send(skill)
   } catch (error) {
     throw error
   }
