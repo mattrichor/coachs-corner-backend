@@ -13,6 +13,19 @@ const GetWorkouts = async (req, res) => {
   }
 }
 
+const GetWorkoutById = async (req, res) => {
+  try {
+    const workouts = await Workout.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
+    res.send(workouts)
+  } catch (error) {
+    throw error
+  }
+}
+
 const GetWorkout = async (req, res) => {
   try {
     const workouts = await Workout.findAll({})
@@ -74,5 +87,6 @@ module.exports = {
   UpdateWorkout,
   RemoveWorkout,
   GetWorkout,
-  MarkWorkoutAsComplete
+  MarkWorkoutAsComplete,
+  GetWorkoutById
 }
