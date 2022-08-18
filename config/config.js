@@ -19,3 +19,21 @@ module.exports = {
     }
   }
 }
+
+// {
+//   "development": {
+//     "database": "coachs_corner_dev",
+//     "host": "127.0.0.1",
+//     "dialect": "postgres"
+//   },
+//   "test": {
+//     "database": "coachs_corner_test",
+//     "host": "127.0.0.1",
+//     "dialect": "postgres"
+//   },
+//   "production": {
+//     "database": "coachs_corner_production",
+//     "host": "127.0.0.1",
+//     "dialect": "postgres"
+//   }
+// }

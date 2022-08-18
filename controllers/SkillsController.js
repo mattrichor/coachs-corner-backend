@@ -13,19 +13,6 @@ const GetSkillsByPlayerId = async (req, res) => {
   }
 }
 
-const GetSkillName = async (req, res) => {
-  try {
-    const skill = await Skill.findOne({
-      where: {
-        id: req.params.skill_id
-      }
-    })
-    res.send(skill)
-  } catch (error) {
-    throw error
-  }
-}
-
 const GetAndUpdateSkillLevel = async (req, res) => {
   try {
     const workout = await Workout.findOne({
@@ -50,6 +37,19 @@ const GetAndUpdateSkillLevel = async (req, res) => {
       }
     })
     res.send(updatedSkill)
+  } catch (error) {
+    throw error
+  }
+}
+
+const GetSkillName = async (req, res) => {
+  try {
+    const skill = await Skill.findOne({
+      where: {
+        id: req.params.skill_id
+      }
+    })
+    res.send(skill)
   } catch (error) {
     throw error
   }
