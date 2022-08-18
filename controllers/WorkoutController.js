@@ -56,10 +56,23 @@ const RemoveWorkout = async (req, res) => {
   }
 }
 
+const MarkWorkoutAsComplete = async (req, res) => {
+  try {
+    const workout = await Workout.update(
+      { completed: true },
+      { where: { id: req.params.workout_id }, returning: true }
+    )
+    res.send(workout)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   GetWorkouts,
   CreateWorkout,
   UpdateWorkout,
   RemoveWorkout,
-  GetWorkout
+  GetWorkout,
+  MarkWorkoutAsComplete
 }

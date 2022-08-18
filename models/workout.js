@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       description: DataTypes.TEXT,
       completionDate: DataTypes.STRING,
       skillIncrease: DataTypes.INTEGER,
+      completed: { type: DataTypes.BOOLEAN, defaultValue: false },
       playerId: {
         type: DataTypes.INTEGER,
         onDelete: 'CASCADE',

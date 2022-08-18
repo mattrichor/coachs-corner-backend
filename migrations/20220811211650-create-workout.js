@@ -20,6 +20,7 @@ module.exports = {
       skillIncrease: {
         type: Sequelize.INTEGER
       },
+      completed: { type: Sequelize.BOOLEAN, defaultValue: false },
       playerId: {
         type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
