@@ -2,7 +2,6 @@ const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
 const AuthRouter = require('./routes/AuthRouter')
-// const PlayerAuthRouter = require('./routes/PlayerAuthRouter')
 const PlayerRouter = require('./routes/PlayerRouter')
 const WorkoutRouter = require('./routes/WorkoutRouter')
 const SkillsRouter = require('./routes/SkillsRouter')
@@ -14,7 +13,6 @@ const CoachRouter = require('./routes/CoachRouter')
 const app = express()
 
 const PORT = process.env.PORT || 3001
-//https://coachs-corner-backend.herokuapp.com/
 
 app.use(cors())
 app.use(logger('dev'))
