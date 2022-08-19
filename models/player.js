@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
       height: DataTypes.INTEGER,
       weight: DataTypes.INTEGER,
       age: DataTypes.INTEGER,
-      isActive: DataTypes.BOOLEAN,
+      isActive: { type: DataTypes.BOOLEAN, defaultValue: true },
       coachId: {
         type: DataTypes.INTEGER,
         onDelete: 'CASCADE',

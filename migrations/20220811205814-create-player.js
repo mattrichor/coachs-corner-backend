@@ -36,7 +36,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       isActive: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        defaultValue: true
       },
       coachId: {
         type: Sequelize.INTEGER,

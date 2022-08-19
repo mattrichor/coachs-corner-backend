@@ -16,14 +16,6 @@ module.exports = {
           key: 'id'
         }
       },
-      // workoutId: {
-      //   type: Sequelize.INTEGER,
-      //   onDelete: 'CASCADE',
-      //   references: {
-      //     model: 'workouts',
-      //     key: 'id'
-      //   }
-      // },
       skillLevel: {
         type: Sequelize.INTEGER
       },
